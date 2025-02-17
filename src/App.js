@@ -29,7 +29,7 @@ import { refreshToken } from './utils/refreshToken'
 import ReceiptViewer from './pages/ReceiptViewer'
 import NewExpenseNotifications from './pages/test2'
 
-const HOST = window.location.host;
+process.env.HOST = window.location.host;
 
 function isTokenExpired(token) {
   if (!token) return true
